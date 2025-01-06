@@ -2417,7 +2417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &595971758
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3620,12 +3620,12 @@ GameObject:
   m_Component:
   - component: {fileID: 834019805}
   m_Layer: 5
-  m_Name: Shoot Button
+  m_Name: Shoot UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &834019805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5654,6 +5654,7 @@ GameObject:
   - component: {fileID: 1323550135}
   - component: {fileID: 1323550137}
   - component: {fileID: 1323550136}
+  - component: {fileID: 1323550138}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5771,6 +5772,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639457f41e5bd1b0b8be1d1ad0ee7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1323550138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323550131}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b109541861c30f1b925264a4cd7dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeSpawn: 3
+  enemyRate: 50
+  PrefabEnemy: {fileID: 8986328500875594450, guid: 1d5f9e1ec18e7f293bccf0f757474ab7,
+    type: 3}
+  PrefabAlly: {fileID: 3745605318107395163, guid: da14d45d014e7d8fda1c8b9f3f507e1a,
+    type: 3}
 --- !u!1001 &1362734343
 PrefabInstance:
   m_ObjectHideFlags: 0
