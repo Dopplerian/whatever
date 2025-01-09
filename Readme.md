@@ -1,5 +1,5 @@
 # Documentation
-Github Repo: https://github.com/Dopplerian/whatever
+Github Repo: https://github.com/Dopplerian/whatever inside this repository there will be the .apk package
 ## Game Scenes
 
 This AR project has one scene in which we start and play the game. Inside this
