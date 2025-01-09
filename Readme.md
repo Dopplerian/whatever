@@ -24,6 +24,33 @@ This game contains a score counter that will keep the acumulated score of the pl
 
 There is a OnCollisionEnter method inside the bullet controller that is triggered everytime it collides with and object, this method will update the score of the player.
 
+**Scripts**
+
+*Logger*
+
+This Controller has the goal to log every event that we desire inside the application, during its initialization defines the path were the log file will be stored and will cotain a sole Log method that will recive the meesagge that would like to be logged, and Log into the file while appending it into the current date time of the moment the method was called.
+
+*Bullet Controller*
+
+This controller has the task to handle all the mechanics a bullet will produce, at first when its declared it will instance a logger object and set a time, to destroy this object if it wasn't able to hit anything in 3 seconds.
+
+Then it contains a method called OnCollisionEnter will be triggered after the event of this bullet colliding with an object, inside this method there is a different behavoiur for any kind on object that is being hit, could be and enemy, ally that will efect the player's score and destroy the bullet object, and if it collides the environment or any unknown object, it will log that event.
+
+Also it cotains the score method that updates the player's score after hitting an enemy or allay and also logging it.
+
+*Timer*
+
+This controller has the task to display to the player the amount of time remaining this player has, this clock will start at 01:00 and will go backwards as long the game continues.
+
+On it's initialization it will call the logger controller and the NPCGenerator.
+
+Inside this controller we have the Update method that updated the value on screen and makes sure that the values don't go negative, another method that expects the event of the watchout alongside with anothe method that updates the timer display.
+
+Finnaly the OnTimerEnd that logs the end of the game and uses the NPCController to stop generating more NPCs
+
+
+
+
 Play Instructions
 =================
 
