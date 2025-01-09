@@ -36,7 +36,7 @@ This controller has the task to handle all the mechanics a bullet will produce, 
 
 Then it contains a method called OnCollisionEnter will be triggered after the event of this bullet colliding with an object, inside this method there is a different behavoiur for any kind on object that is being hit, could be and enemy, ally that will efect the player's score and destroy the bullet object, and if it collides the environment or any unknown object, it will log that event.
 
-Also it cotains the score method that updates the player's score after hitting an enemy or allay and also logging it.
+Also it contains the score method that updates the player's score after hitting an enemy or allay and also logging it.
 
 *Timer*
 
@@ -48,7 +48,13 @@ Inside this controller we have the Update method that updated the value on scree
 
 Finnaly the OnTimerEnd that logs the end of the game and uses the NPCController to stop generating more NPCs
 
+*BulletSpawner.cs*
 
+This is a simple script that ensures the gun object is always aligned with the camera and that has a `Shoot` method that is called when the button in the middle of the screen is pressed.
+
+*UIManager.cs*
+
+A simple script that hides the greeting prompt and unhides the shoot button after you press the "Continue" button.
 
 
 Play Instructions
