@@ -5654,7 +5654,6 @@ GameObject:
   - component: {fileID: 1323550135}
   - component: {fileID: 1323550137}
   - component: {fileID: 1323550136}
-  - component: {fileID: 1323550138}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5772,24 +5771,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639457f41e5bd1b0b8be1d1ad0ee7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1323550138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323550131}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b109541861c30f1b925264a4cd7dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeSpawn: 3
-  enemyRate: 50
-  PrefabEnemy: {fileID: 8986328500875594450, guid: 1d5f9e1ec18e7f293bccf0f757474ab7,
-    type: 3}
-  PrefabAlly: {fileID: 3745605318107395163, guid: da14d45d014e7d8fda1c8b9f3f507e1a,
-    type: 3}
 --- !u!1001 &1362734343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7042,7 +7023,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676494490}
-  - component: {fileID: 1676494491}
   - component: {fileID: 1676494492}
   m_Layer: 0
   m_Name: Gun
@@ -7066,22 +7046,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 40782508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1676494491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676494489}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f3f62c50e9d3ea50b9bba7f33797a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 40782508}
-  bulletPrefab: {fileID: 3555902977704940904, guid: 23412048bf4821d4f8bf5c7d9c1abd5b,
-    type: 3}
-  bulletSpeed: 100
 --- !u!114 &1676494492
 MonoBehaviour:
   m_ObjectHideFlags: 0
