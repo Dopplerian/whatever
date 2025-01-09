@@ -58,6 +58,15 @@ event.
 Also, it contains the score method that updates the player's score after hitting
 an enemy or allay and also logging it.
 
+*NPCController.cs*
+
+This controller has the goal of managing the creation of NPCs during the simulation, at its initialization it will call a logger and the ARPlaneManager that is an unity object that detects plains and manage them.
+
+It contains an update method that will check if its time to spawn the next NPC, the stopGenerating that stops the generation of NPCs, the method GetRandomPointOnPlane that will pick a random point on the plane to create and NPC
+
+An the most important method SpawnAndDespawn is the method that generates NPCs and has a few steps, first it check that a plane is correctly detected, if that isn't the case it will log an error.
+If this plane exists it randomly picks an spawning point unsing Unity's objets and by searching an horizontal plane, after finding that number the NPC will be created and randomly could by either an ally or an enemy. 
+
 *Timer.cs*
 
 This controller has the task to display to the player the amount of time
